@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.57"
+    />
+    <Button
+            android:id="@+id/idBtn"
+            android:text="@string/Buscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            android:layout_marginTop="56dp" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.497"/>
+    <ImageView
+            android:id="@+id/imgPerritos"
+            android:layout_width="335dp"
+            android:layout_height="207dp" tools:srcCompat="@tools:sample/avatars"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@null"
+            app:layout_constraintBottom_toTopOf="@+id/txt1" android:layout_marginBottom="124dp"/>
+    <EditText
+            android:layout_width="46dp"
+            android:layout_height="49dp"
+            android:inputType="number"
+            android:textColorHint="@color/cardview_dark_background"
+            android:ems="10"
+            android:id="@+id/editxt"
+            app:layout_constraintTop_toBottomOf="@+id/imgPerritos" app:layout_constraintBottom_toTopOf="@+id/txt1"
+            app:layout_constraintVertical_bias="0.506" tools:ignore="LabelFor,MissingConstraints"
+            android:autofillHints="" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:hint="ID"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
